@@ -1,0 +1,131 @@
+.footer {
+  width: 1440px;
+  min-height: 326px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  
+  font-size: @footer-font-size;
+  color: @footer-color;
+  
+  background-color: @footer-bkg-color;
+};
+
+.logo-wrapper, 
+.menu-wrapper {
+  width: 360px;
+  min-height: 200px;
+}
+
+.logo-wrapper {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: @logo-font-size;
+  line-height: @logo-line-height;
+  text-transform: uppercase;
+  
+  &--footer {
+    margin-bottom: 44px;
+    
+    color: @logo-color--footer;
+    
+    &::after {
+      content: "";
+      
+      width: 80px;
+      height: 10px;
+      
+      position: absolute;  
+      top: 200px;
+      left: 0;
+      
+      background-color: @logo-color--footer;
+    }
+  }
+}
+
+.nav-wrapper {
+  width: 440px;
+  min-height: 200px;
+  
+  box-sizing: border-box;
+  padding-top: 91px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  width: inherit;
+  
+  font-size: @main-nav-font-size;
+  line-height: @main-nav-line-height;
+  text-transform: uppercase;
+  
+  &--footer {
+    a {
+      color: @main-nav-color--footer; 
+    }
+  }
+  
+  &_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.social-btns-wrapper {
+  width: 160px;
+  min-height: 43px;
+}
+
+.social-btns-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu {
+  width: inherit;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  &--footer {
+    a { 
+      color: @footer-color
+    };
+  } 
+}
